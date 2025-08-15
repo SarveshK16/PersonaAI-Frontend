@@ -1,10 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PersonaAI-Frontend
 
-## Getting Started
+A Next.js frontend for the PersonaAI project. Built with TypeScript and styled using CSS.
+This platform provides a chat interface for AI-driven persona conversations using pre-defined Personas (e.g., _Hitesh Sir_ and _Piyush Sir_ personas) and integrates with AI models to have simulate styled, personality-based conversations.
 
-First, run the development server:
+## 💻 Live Link
+
+Try it out : https://persona-ai-frontend-alpha.vercel.app/
+
+## Tech Stack
+- **Framework**: Next.js
+- **Language**: TypeScript
+- **Styles**: Tailwind CSS
+---
+
+## 🧱 Project Structure
 
 ```bash
+
+PersonaAI-Frontend/
+├── app/               # Next.js app directory (routes/pages)
+├── components/        # Reusable UI components
+├── hooks/             # Custom React hooks
+├── lib/               # Library or utility functions
+├── public/            # Static assets (images, icons, etc.)
+├── styles/            # Global and component-specific CSS
+├── .gitignore
+├── next.config.ts
+├── package.json
+├── tsconfig.json
+├── postcss.config.mjs
+└── README.md
+```
+
+## ⚙️ Getting Started
+
+**Prerequisites**  
+- Node.js  
+- Package manager: npm | yarn | pnpm | bun
+
+**Install dependencies**  
+```bash
+#Clone the repo
+
+cd PersonaAI-Frontend
+
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+
+touch .env
+
 npm run dev
 # or
 yarn dev
@@ -12,25 +61,23 @@ yarn dev
 pnpm dev
 # or
 bun dev
+
+
+#Access it via http://localhost:3000.
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔧 Environment Variables
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Your .env file directory should include:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+NEXT_PUBLIC_API_URL = your-backend-url
+```
 
-## Learn More
+## 🧠 Credits
 
-To learn more about Next.js, take a look at the following resources:
+Built by Sarvesh Kulkarni as an assignment project as part of ChaiCode GenAI with JS Cohort.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📄 License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT License
